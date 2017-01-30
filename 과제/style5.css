@@ -1,0 +1,301 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+body{
+    font-family: 'Poppins', sans-serif;
+}
+html,body,div,header,nav,section,aside,article,footer,figure,figcaption,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,p,fieldset{
+  margin: 0;
+  padding: 0;
+ }
+.header-contents, .intro-contents, .contents1-contents, .contents2-contents, .features-contents, .gallery-contents, .team-contents, .contacts-contents, .footer-contents{
+     width: 1140px;
+     margin: 0 auto;
+     box-sizing: border-box;
+ }
+ ul{
+   list-style-type: none;
+   text-decoration: none;
+ }
+ a{
+     text-decoration: none;
+ }
+ /*헤더 영역*/
+ .header-contents::after{
+   content: "";
+   clear: both;
+   display: block;
+ }
+ .logo{
+     float: left;
+     margin-right: 30px;
+ }
+ .logo > a{
+     color: #03a67b;
+ }
+ .lnb{
+     position: relative;
+ }
+ .lnb > li {
+     float: left;
+     padding: 15px 22px;
+ }
+ .lnb > li > a{
+     color: rgba(51, 51, 51, 0.9);
+ }
+ .login, .signup{
+     color: rgba(51, 51, 51, 0.9);
+     font-size: 14px;
+     float: right;
+ }
+ .login{
+     position: relative;
+     top:10px;
+     margin-right: 20px;
+ }
+ .signup{
+     border: 1px solid #03a67b;
+     border-radius: 5px;
+     padding: 10px 36px;
+     color: #03a67b;
+ }
+/*인트로 영역*/
+.intro{
+  border-bottom: 1px solid #ccc;
+}
+.intro-contents{
+  background: url(images/Iphone-Mockup.png) no-repeat center 300px;;
+  height: 660px;
+  padding-top: 100px;
+  position: relative;
+}
+.intro-contents h2{
+  font-size: 52px;
+  color: #333333;
+  text-align: center;
+}
+.intro-contents > p, .gallery-contents > p{
+  color: rgba(51, 51, 51, 0.6);
+  text-align: center;
+  width: 775px;
+  margin: 0 auto;
+}
+.intro-contents div{
+  box-sizing: border-box;
+  padding: 20px 25px;
+  background: #03a67b;
+  color: white;
+  font-size: 14px;
+  line-height: 16px;
+  border-radius: 5px;
+}
+.intro-bar1{
+  width: 342px;
+  height: 76px;
+  position: absolute;
+  top: 350px;
+  left: 144px;
+}
+.intro-bar2{
+  width: 342px;
+  height: 94px;
+  position: absolute;
+  top: 470px;
+  right: 140px;
+}
+/*콘텐츠 영역*/
+.contents1-contents{
+  background: url(images/01.png) no-repeat 70% 42%;
+  padding: 100px 27px 100px 0;
+}
+.contents1-contents{
+  display: flex;
+  justify-content: space-between;
+}
+.contents1-info, .contents2-info{
+  margin: auto 0;
+}
+.contents1-info a, .contents2-info a, .features h2 , .gallery-contents h2, .team-contents h2, .contacts-contents h2{
+  font-size: 44px;
+  color: #333333;
+}
+.contents1-info p, .contents2-info p, .features-contents > p{
+  width: 430px;
+  color: rgba(51, 51, 51, 0.6);
+  line-height: 20px;
+}
+.contents2-contents{
+  background: url(images/02.png) no-repeat 0 42%;
+  padding: 100px 0;
+}
+.contents2-contents{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+/*피쳐영역*/
+.features{
+  background: #fcfcfc;
+}
+.features-contents{
+  padding: 90px 20px 90px 0;
+}
+.features-contents > p{
+  width: 690px;
+  margin-bottom: 40px;
+}
+.features-list1, .features-list2{
+  display: flex;
+  justify-content: space-between;
+}
+.features-list img{
+  float: left;
+  margin-right: 15px;
+}
+.features-list h3{
+  text-transform: uppercase;
+  color: #333333;
+  font-size: 14px;
+  margin-top: 30px;
+}
+.features-list p{
+  width: 350px;
+  margin-left: 185px;
+  margin-top: 20px;
+  color: rgba(51, 51, 51, 0.5);
+  line-height: 18px;
+}
+/*갤러리 영역*/
+.gallery{
+  padding: 77px 0 135px 0;
+}
+.gallery-column{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.gallery-contents h2{
+  text-align: center;
+}
+.gallery-contents > p{
+  width: 690px;
+}
+.gallery-column p{
+  width: 215px;
+  margin: 0 auto;
+  color: rgba(51, 51, 51, 0.5);
+}
+.gallery-column a{
+  color: #333333;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.gallery-column h3{
+  line-height: 16px;
+}
+.gallery-column h4{
+  color: rgba(51, 51, 51, 0.25);
+}
+.gallery-column img{
+  margin: 50px 29px 10px 29px;
+}
+.arrow-left, .arrow-right{
+  margin: auto 0;
+}
+.arrow-left{
+  order: -1;
+}
+/*팀 영역*/
+.team{
+  background: #fcfcfc;
+}
+.team-contents{
+  padding: 100px 0 93px 0;
+}
+.team-contents h2{
+  text-align: center;
+  margin-bottom: 40px;
+}
+.team-list{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.team-list div{
+  box-sizing: border-box;
+  width: 270px;
+  height: 315px;
+  background: white;
+  box-shadow: 0 0 20px rgba(51, 51, 51, 0.4);
+}
+.team-list li{
+  float: left;
+  margin: 0 5px;
+}
+.team-list h4{
+  font-size: 14px;
+  text-transform: uppercase;
+  color: rgba(51, 51, 51, 0.4);
+}
+.member1 > img, .member2 > img, .member3 > img, .member4 > img{
+  display: inline-block;
+  margin-top: 50px;
+}
+.member1, .member2, .member3, .member4{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.member1 h3 a, .member2 h3 a, .member3 h3 a, .member4 h3 a{
+  color: #333333;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+/*콘택트 영역*/
+.contacts{
+  border-bottom: 1px solid #ccc;
+}
+.contacts-contents li{
+  float: left;
+  margin: 25px 7px;
+}
+.contacts-contents{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0 60px 0;
+}
+.contacts-contents p{
+  color: rgba(51, 51, 51, 0.6);
+  width: 280px;
+  text-align: center;
+  line-height: 18px;
+}
+/*푸터 영역*/
+.footer-list1 h1{
+  margin-right: 120px;
+}
+.footer-list1 p{
+  width: 215px;
+  color: rgba(51, 51, 51, 0.7);
+  line-height: 18px;
+}
+.footer-contents{
+  display: flex;
+  justify-content: space-between;
+  padding: 75px 160px 80px 0;
+}
+.footer-contents h2 a{
+  color: #333333;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.footer-contents h2{
+  margin-bottom: 12px;
+}
+.footer-contents ul a{
+  font-size: 14px;
+  color: rgba(51, 51, 51, 0.7);
+}
