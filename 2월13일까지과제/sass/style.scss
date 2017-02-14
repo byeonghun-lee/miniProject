@@ -1,5 +1,9 @@
 // 모바일 우선
 // 그리도 시도............................
+// @import "grid";
+// @include col-width(4, 90, 20);
+// @include col(10px, 10px);
+//
 // .container{
 //   position: relative;
 // }
@@ -7,20 +11,22 @@
 //   content: '';
 //   background: linear-gradient(90deg, rgba(191, 84, 137, 0.3) 10%, rgba(18, 71, 230, 0.4) 10% ,rgba(18, 71, 230, 0.4) 90%, rgba(191, 84, 137, 0.3) 10%);
 //   z-index: 1000;
-//   width: 480px;
+//   width: 92%;
 //   height: 3384px;
 //   position: absolute;
+//   left: 0;
+//   right: 0;
 //   top: 0;
 //   margin: 0 auto;
 //   background-size: 25%;
 // }
-//
-// @include col-width(4, 90, 20);
-// @include col(10px, 10px);
+
+
 
 @import "grid";
 @include container(480px);
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import "config";
 .container{
   outline: black solid 1px;
 }
@@ -40,14 +46,9 @@ html,body,div,header,nav,section,aside,article,footer,figure,figcaption,ul,ol,li
      text-decoration: none;
  }
 // 헤더영역
+@include header(480px);
 header{
-  background: #413e3d;
-  box-sizing: border-box;
   padding: 23px 30px 23px 30px;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  width: 480px;
 }
 header label{
   box-sizing: border-box;
@@ -89,7 +90,7 @@ label:active{
   display: none;
   position: absolute;
   top: 87px;
-  left:0;
+  right: 0;
   background: #413e3d;
   text-align: center;
   z-index: 1000;
@@ -138,6 +139,7 @@ label:active{
   width: 420px;
   height: 264px;
   background: #dadee8;
+  position: relative;
 }
 .heading h2{
   color: #5a5e65;
@@ -159,7 +161,11 @@ label:active{
   margin-bottom: 24px;
 }
 .cloumn1 img, .cloumn2 img, .cloumn3 img{
-  margin: 106px 178px;
+  position: absolute;
+  height: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 .cloumn1 a, .cloumn2 a, .cloumn3 a{
   background: #afb2ba;
@@ -228,7 +234,7 @@ label:active{
 .send-mail{
   padding: 0 30px;
 }
-.send-mail input{
+.send-mail input, textarea{
   border: 1px solid #dadee8;
   border-radius: 3px;
   width: 420px;
@@ -237,7 +243,9 @@ label:active{
   margin: 12px 0;
   padding-left: 20px;
 }
-section .your-message{
+
+textarea{
+  padding-top: 20px;
   height: 240px;
 }
 .send-message{
@@ -260,6 +268,52 @@ footer{
   text-align: center;
   padding: 24px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 759px) {
   @include container(760px);
+  @include header(760px);
+  .top-menu{
+    text-indent: 28px;
+    text-align: left;
+  }
+  .top-menu a{
+    width: 280px;
+  }
+  .head-line{
+    width: 160px;
+  }
+  .cloumn1 div{
+    width: 700px;
+    height: 315px;
+  }
+  .cloumn2 div, .cloumn3 div{
+    width: 340px;
+    height: 216px;
+  }
+  .cloumn1 a, .cloumn2 a, .cloumn3 a {
+    position: static;
+    line-height: 24px;
+    margin-top: 24px;
+    color: #5a5e65;
+    padding: 0;
+    background: white;
+    width: 340px;
+  }
+  .work p{
+    display: inline-block;
+    line-height: 1.5;
+  }
+  .cloumn2, .cloumn3{
+    width: 340px;
+  }
+  .cloumn2 p, .cloumn3 p{
+    width: 340px;
+  }
+  .column-position{
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+
+
 }
