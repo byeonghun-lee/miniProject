@@ -1,3 +1,5 @@
+*
+  box-sizing: border-box
 %flex-center
   display: flex
   justify-content: center
@@ -7,11 +9,19 @@ body
   @extend %flex-center
   margin: 0
   min-height: 100vh
+.case
+  display: flex
+  flex-direction: column
+.round
+  border: 10px solid  brown
+  display: flex
+  position: relative
 
 .book-flip_name
   width: 100px
   height: 300px
   border-radius: 5px
+  padding-top: 10px
   right: 0
   background: rgb(215, 155, 38)
   color: rgb(225, 249, 250)
