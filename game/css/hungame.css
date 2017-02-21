@@ -1,0 +1,40 @@
+.wrapper{
+  display: flex;
+}
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li{
+  margin: 20px;
+  color: white;
+}
+[class*="line-"]{
+  width: 150px;
+  text-align: center;
+}
+.line-1{
+  background: red;
+}
+.line-2{
+  background: blue;
+}
+.line-3{
+  background: green;
+}
+.line-4{
+  background: pink;
+}
+.line-1 li.active{
+  background: #8f8b8b;
+}
+.line-2 li.active{
+  background: #8f8b8b;
+}
+.line-3 li.active{
+  background: #8f8b8b;
+}
+.line-4 li.active{
+  background: #8f8b8b;
+}

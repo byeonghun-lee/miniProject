@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>hunmentum</title>
+	<style>
+		body{
+			background: url('https://source.unsplash.com/category/nature/1600x900');
+			background-size: cover;
+			min-height: 100vh;
+			margin: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.input-group label{
+			color: white;
+			font-size: 54px;
+			font-weight: bold;
+		}
+		.input-group{
+			display: flex;
+			flex-direction: column;
+		}
+		.input-group input{
+			width: 700px;
+			background-color: transparent;
+			border: 0;
+			border-bottom: 3px solid white;
+			text-align: center;
+			font-size: 34px;
+			margin: 48px auto;		
+		}
+		.input-group button{
+			width: 300px;
+			margin: 0 auto;
+			height: 50px;
+			border-radius: 10px;
+			letter-spacing: 2px;
+			background-color: transparent;
+			border: 3px solid white;
+			color: white;
+			font-size: 24px;
+		}
+		.todolist{
+			/*list-style: none;*/
+			color: white;
+			font-size: 34px;
+		}
+	</style>
+</head>
+<body>
+	<div class="app">
+		<div class="input-group" role="group">
+			<label for="input-todo">What is your main focus today?</label>
+			<input id="input-todo" type="text">
+			<button type="button" class="add-todo-button">Add</button>
+		</div>
+		<ul class="todolist">
+			
+		</ul>
+	</div>
+	<script>
+	// 변수의 사용자가 입력한 정보를 입력.
+		var input = document.querySelector('#input-todo');
+		var button = document.querySelector('.add-todo-button');
+		var todolist = document.querySelector('.todolist');
+		button.onclick = function(){
+			var item = document.createElement('li');
+			var item_text_node = document.createTextNode(input.value);
+			item.setAttribute('class', 'todolist_item');
+			item.appendChild(item_text_node);
+			todolist.appendChild(item);
+			input.value='';
+			input.focus();
+		};
+	</script>
+</body>
+</html>
