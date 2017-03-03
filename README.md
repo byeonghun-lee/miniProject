@@ -14,4 +14,4 @@
   - [페이지 이동](https://byeonghun-lee.github.io/homework/game/puzzleGame)  
 
 #### 4. [images-position(resposive)](https://github.com/byeonghun-lee/homework/tree/gh-pages/images_position)  
-  -[페이지 이동](https://byeonghun-lee.github.io/homework/images_position/)  
+  - [페이지 이동](https://byeonghun-lee.github.io/homework/images_position/)  
