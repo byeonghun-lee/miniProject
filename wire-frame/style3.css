@@ -1,0 +1,222 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+body{
+    font-family: 'Poppins', sans-serif;
+}
+html,body,div,header,nav,section,aside,article,footer,figure,figcaption,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,p,fieldset{
+  margin: 0;
+  padding: 0;
+ }
+ .header-contents, .intro-contents, .content-contents, .info-contents, .features-contents, .blog-contents, .team-contents, .footer-contents{
+     width: 1140px;
+     margin: 0 auto;
+     box-sizing: border-box;
+ }
+ ul{
+   list-style-type: none;
+   text-decoration: none;
+ }
+ a{
+     text-decoration: none;
+ }
+ /*헤더 영역*/
+ .header-contents{
+   padding-top: 70px;
+   display: flex;
+   justify-content: space-between;
+ }
+ .logo > a{
+     color: #03a67b;
+ }
+.lnb li{
+  float: left;
+  padding-top: 15px;
+}
+.lnb a{
+  font-size: 14px;
+  color: rgba(51, 51, 51, 0.9);
+  padding-left: 20px;
+}
+/*인트로 영역*/
+.intro-contents{
+  padding: 160px 0 270px 0;
+  position: relative;
+}
+.intro-contents h2{
+  font-size: 52px;
+  color: #333333
+}
+/*본문 글씨*/
+.intro-contents p, .content-contents p, .info-contents p, .features-contents p, .blog-contents p, .team-contents p ,.footer-contents p{
+  color: rgba(51, 51, 51, 0.7);
+  line-height: 20px;
+}
+.intro-contents p{
+  width: 490px;
+}
+.intro button{
+    padding: 17px 67px 17px 67px;
+    letter-spacing: 2px;
+    border: 0;
+    border-radius: 3px;
+    color: white;
+    background: #03a67b;
+    font-size: 12px;
+    margin-top: 29px;
+    cursor: pointer;
+}
+.intro-contents img{
+  float: right;
+  position: absolute;
+  top: 285px;
+  right: -76px;
+}
+/*컨텐츠 영역*/
+.content{
+  background: #fcfcfc;
+}
+.content-contents{
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 0 91px 0;
+}
+/*제목영역*/
+.content-contents h2, .features h2, .blog-contents h2, .team-contents h2{
+  font-size: 44px;
+  color: #333333;
+}
+.content-contents h2{
+  margin-top: 120px;
+}
+.content-contents p{
+  width: 430px;
+}
+/*인포 영역*/
+.info-contents{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding: 90px 0;
+}
+.info-contents h2{
+  color: #03a67b;
+  font-size: 48px;
+  line-height: 48px;
+}
+.info-contents h3{
+  margin-bottom: 5px;
+}
+.info-contents a{
+  color: #333333;
+}
+.info-contents p{
+  width: 215px;
+}
+/*피쳐 영역*/
+.features{
+  background: #fcfcfc;
+}
+.features-contents{
+  text-align: center;
+  padding: 100px 27px;
+}
+.features-contents > p, .blog-contents > p, .team-contents p{
+  width: 690px;
+  margin: 0 auto;
+}
+.features-column, .blog-column{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+.features-column h3{
+  margin: 28px 0 10px 0;
+}
+.features-column a, .blog-column a{
+  font-size: 14px;
+  color: #333333;
+}
+.features-column1, .features-column2, .features-column3{
+    width: 315px;
+}
+.features-column img{
+    display: block;
+    margin: 0 auto;
+}
+/*블로그 영역*/
+.blog-contents{
+  text-align: center;
+  padding: 85px 27px 90px 27px;
+}
+.blog-column img{
+  margin-bottom: 15px;
+}
+.blog-column a{
+  display: block;
+  margin: 0 auto;
+  letter-spacing: 1px;
+  width: 209px;
+  line-height: 18px;
+}
+.blog-column h3{
+  margin-bottom: 15px;
+}
+.blog-column p{
+  width: 315px;
+  margin: 0 auto;
+}
+/*팀 영역*/
+.team{
+  background: #fcfcfc;
+}
+.team-contents{
+  text-align: center;
+  padding: 90px 0;
+}
+.team-contents p{
+  margin-bottom: 70px;
+}
+.team-list ul{
+  display: flex;
+  justify-content: space-between;
+}
+.team-list > ul{
+  margin-bottom: 10px;
+}
+/*푸터 영역*/
+.footer-contents{
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0 90px 0;
+}
+.contact-section a, .subscribe-section a{
+  font-size: 14px;
+  color: #333333;
+}
+.footer-contents p{
+  margin-top: 10px;
+  width: 320px;
+}
+.subscribe-section p{
+  width: 215px;
+  margin-bottom: 20px;
+}
+.footer input{
+    box-sizing: border-box;
+    display: inline-block;
+    width: 312px;
+    height: 43px;
+    background: #f5f5f5;
+    border: 0;
+    border-radius: 3px 0 0 3px;
+    padding-left: 10px;
+}
+.footer button{
+    padding: 7px 15px 12px 15px;
+    border: 0;
+    border-radius: 0 3px 3px 0;
+    color: white;
+    background: #03a67b;
+    margin-left: -5px;
+    font-size: 20px;
+}
