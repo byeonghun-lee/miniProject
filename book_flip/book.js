@@ -8,7 +8,7 @@ for (var i=0; i < book_flip.length; i++) {
   var flip_name = book.children[0];
   var flip_cover  = book.children[book.children.length - 1];
   flip_name.onclick = function() {
-    this.parentNode.style.cssText = 'transform: rotateY(90deg) translateX(100%)';
+    this.parentNode.style.cssText = 'transform: rotateY(89deg) translateX(100%)';
   };
   console.log(flip_cover);
   flip_cover.onclick = function() {

@@ -25,6 +25,7 @@ body
   right: 0
   background: rgb(215, 155, 38)
   color: rgb(225, 249, 250)
+  border: 1px solid #f1c33b
   text-align: center
   transform-style: preserve-3d
   transform: perspective(500px) rotateY(0)
@@ -41,14 +42,14 @@ body
   left: 0
 .book-flip_cover
   transform-style: preserve-3d
-  transform: rotateY(-90deg)
+  transform: translateX(-100%) rotateY(-90deg)
   transform-origin: 100% 0%
   // backface-visibility: hidden
 
 .book-flip
   position: relative
   margin: 0
-  width: 300px
+  width: 100px
   height: 300px
   transform-style: preserve-3d
   transform:  rotateY(0deg)
