@@ -18,3 +18,6 @@
 
 #### 5. [Images-position(resposive)](https://github.com/byeonghun-lee/homework/tree/gh-pages/images_position)  
   - [Page 이동](https://byeonghun-lee.github.io/homework/images_position/)  
+
+#### 6. [Font Control](https://github.com/byeonghun-lee/homework/tree/gh-pages/font_control)  
+  - [Page 이동](https://byeonghun-lee.github.io/homework/font_control/)  
