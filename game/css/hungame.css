@@ -1,5 +1,10 @@
 .wrapper{
   display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+h1{
+  text-align: center;
 }
 ul{
   list-style: none;
@@ -7,34 +12,35 @@ ul{
   padding: 0;
 }
 li{
-  margin: 20px;
+  margin: 0;
+  padding: 100px;
   color: white;
 }
 [class*="line-"]{
-  width: 150px;
+  width: 25%;
   text-align: center;
 }
 .line-1{
-  background: red;
+  background: #ff7cbf;
 }
 .line-2{
-  background: blue;
+  background: #5f8cf0;
 }
 .line-3{
-  background: green;
+  background: #f5de64;
 }
 .line-4{
-  background: pink;
+  background: #64e77d;
 }
 .line-1 li.active{
-  background: #8f8b8b;
+  background: #cdc6c6;
 }
 .line-2 li.active{
-  background: #8f8b8b;
+  background: #cdc6c6;
 }
 .line-3 li.active{
-  background: #8f8b8b;
+  background: #cdc6c6;
 }
 .line-4 li.active{
-  background: #8f8b8b;
+  background: #cdc6c6;
 }
