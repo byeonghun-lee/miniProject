@@ -17,6 +17,9 @@
  처음엔 안그랬는데 .set-height만 주면 그림이 크기가 0*0으로 된다.
  이미 위에서 float를 시켰기 때문에 높이를 모르는 것인가?
 */
+.set-width, .set-height{
+  position: absolute;
+}
 .set-width{
   width: 100%;
   height: auto;
@@ -24,6 +27,26 @@
 .set-height{
   width: auto;
   height: 100%;
+}
+.img-contents{
+  display: inline-block;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  background: #000;
+  opacity: 0;
+  transition: 1s all ease-in-out;
+}
+.img-contents p{
+  color: white;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.img-box:hover .img-contents{
+  opacity: 0.8;
 }
 @media screen and (max-width: 767px) {
  .container{
