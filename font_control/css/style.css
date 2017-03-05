@@ -1,0 +1,13 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background-image: linear-gradient(to top, #ebbba7 0%, #cfc7f8 100%);
+  background-repeat: no-repeat;
+}
+.wrapper{
+  width: 80%;
+  height: 0;
+  padding-bottom: 50%;
+  margin: 0 auto;
+}
