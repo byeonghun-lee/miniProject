@@ -101,3 +101,22 @@ line_height_down_button.onclick = function() {
 function line_height(num){
   text_1984.style.lineHeight = num;
 }
+
+// -----------------------------------------------------
+// 리셋 버튼
+var wrapper;
+wrapper = document.querySelector('.wrapper');
+var reset_button;
+reset_button = wrapper.querySelector('.reset-button');
+
+reset_button.onclick = function(){
+  font_count = 16;
+  font_size(font_count);
+  updateCount(font_count);
+  letter_count = 1;
+  updateCountSp(letter_count);
+  letter_spacing(letter_count);
+  line_count = 1.5;
+  updateCountLi(line_count);
+  line_height(line_count);
+}

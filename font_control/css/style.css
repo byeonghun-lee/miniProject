@@ -4,10 +4,15 @@
 body{
   background-image: linear-gradient(to top, #ebbba7 0%, #cfc7f8 100%);
   background-repeat: no-repeat;
+  min-height: 100vh;
 }
+h1{
+  color: #f6f2f3;
+}
+/*p{
+  color: #bf57f6;
+}*/
 .wrapper{
   width: 80%;
-  height: 0;
-  padding-bottom: 50%;
   margin: 0 auto;
 }
