@@ -1,0 +1,54 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+.container{
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.music-list{
+  width: 600px;
+  padding: 0;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  list-style: none;
+  border: 1px solid black;
+}
+[class*="m-list-"]{
+  padding: 15px;
+  cursor: pointer;
+  border: 1px solid blue;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.cover img{
+  width: 150px;
+  height: auto;
+}
+.modal-window{
+  position: fixed;
+  width: 450px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  background: #8f939a;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+.music-contents{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.seekbar{
+  width: 280px;
+  height: 2px;
+  background: #97b3f2;
+}
